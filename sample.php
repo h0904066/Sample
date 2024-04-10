@@ -65,7 +65,8 @@ select {
 <script src="../../_common/scripts/jquery-3.4.1.min.js"></script>
 <script>
     'use strict';
-
+    
+    // 選択されたらradioボタンを表示
     $(document).ready(function(){
         $('.kind').change(function(){
             // console.log('AAA')
@@ -73,6 +74,7 @@ select {
         });
     });
 
+    // どのradioボタンが選択されたかの情報を取得
     function cal() {
         const numbtn = document.querySelector('input[name="num"]:checked').value;
         const numbtn2 = document.querySelector('input[name="num2"]:checked').value;
